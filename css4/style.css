@@ -1,0 +1,371 @@
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Navigation
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+nav {
+    margin-bottom: 30px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline-block
+}
+nav a {
+    display: block;
+    padding: 0 15px;
+    border: solid 2px #b2cce1;
+    color: #b2cce1;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+nav a:hover,
+nav a.active {
+    border: solid 2px #315a7d;
+    color: #315a7d;
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Image Grid
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+.col {
+    float: left
+}
+.col-row {
+    margin-bottom: 60px
+}
+.col-row:last-child {
+    margin-bottom: 0
+}
+.two-col {
+    padding-left: 60px
+}
+.two-col .col {
+    width: 540px
+}
+.col-1-2 {
+    margin-left: -60px;
+    margin-right: 60px;
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Figures
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+figure {
+    margin: 0;
+    position: relative;
+}
+figure img {
+    display: block;
+    position: relative;
+    z-index: 10;
+    max-width: 100%;
+    height: auto;
+}
+figure figcaption {
+    display: block;
+    position: absolute;
+    z-index: 5;
+}
+figure h3 {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+figure span {
+    color: #b2cce1;
+    display: block;
+    line-height: 1.2;
+}
+figure a.close-caption {
+    display: block;
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #315a7d;
+}
+figure a.close-caption.hidden {
+    display: none
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Effect 1
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+#effect-1 a.close-caption {
+    bottom: 10px;
+    right: 10px;
+}
+#effect-1 figure {
+    background-color: steelblue
+}
+#effect-1 figcaption {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+#effect-1 figure img {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.no-touch #effect-1 figure:hover img,
+#effect-1 figure.hover img {
+    -webkit-transform: translateY(-90px);
+    -moz-transform: translateY(-90px);
+    -ms-transform: translateY(-90px);
+    -o-transform: translateY(-90px);
+    transform: translateY(-90px);
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Effect 2
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+#effect-2 a.close-caption {
+    top: 10px;
+    right: 10px;
+}
+#effect-2 figure figcaption {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: steelblue;
+    text-align: center;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#effect-2 figure figcaption h3 {
+    margin-top: 150px
+}
+#effect-2 figure img {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.no-touch #effect-2 figure:hover img,
+#effect-2 figure.hover img {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.no-touch #effect-2 figure:hover figcaption,
+#effect-2 figure.hover figcaption {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Effect 3
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+#effect-3 a.close-caption {
+    bottom: 10px;
+    right: 10px;
+}
+#effect-3 figure {
+    background-color: steelblue
+}
+#effect-3 figure figcaption {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+}
+#effect-3 figure img {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.no-touch #effect-3 figure:hover img,
+#effect-3 figure.hover img {
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+    -ms-transform-origin: top left;
+    -o-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Effect 4
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+#effect-4 figure {
+    overflow: hidden
+}
+#effect-4 figure a.close-caption {
+    bottom: 10px;
+    left: 10px;
+}
+#effect-4 figure figcaption {
+    background-color: steelblue;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+#effect-4 figure img {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.no-touch #effect-4 figure:hover img,
+#effect-4 figure.hover img {
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    transform: translateX(50%);
+}
+.no-touch #effect-4 figure:hover figcaption,
+#effect-4 figure.hover figcaption {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Effect 5
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+#effect-5 figure a.close-caption {
+    bottom: 10px;
+    left: 10px;
+}
+#effect-5 figure figcaption {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: steelblue;
+    padding: 20px;
+}
+#effect-5 figure img {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.no-touch #effect-5 figure:hover img,
+#effect-5 figure.hover img {
+    -webkit-transform: rotate(-360deg) scale(0);
+    -moz-transform: rotate(-360deg) scale(0);
+    -ms-transform: rotate(-360deg) scale(0);
+    -o-transform: rotate(-360deg) scale(0);
+    transform: rotate(-360deg) scale(0);
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Media Queries
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+@media all and (max-width: 1200px) { 
+    .col {
+        float: none
+    }
+    .two-col {
+        padding-left: 0
+    }
+    .two-col .col {
+        margin-bottom: 60px
+    }
+    .two-col .col:last-child {
+        margin-bottom: 0
+    }
+    .col-1-2 {
+        margin: 0 auto
+    }
+    .col-2-2 {
+        margin: 0 auto
+    }
+}
+@media all and (max-width: 660px) { 
+    .col-row {
+        margin-bottom: 30px
+    }
+    .two-col .col {
+        max-width: 540px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+@media all and (max-width: 615px) { 
+    figure h3 {
+        font-size: 18px
+    }
+    figure span {
+        font-size: 12px
+    }
+}
+@media all and (max-width: 480px) { 
+    #effect-2 figure figcaption h3 {
+        margin-top: 100px
+    }
+}
+@media all and (max-width: 360px) { 
+    #effect-2 figure figcaption h3 {
+        margin-top: 80px
+    }
+}
