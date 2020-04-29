@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Converse com Clarice Lispector.">
+    <meta name="Keywords" content="Clarice Lispector, Lispector, Poesia Brasileira, Escritores Brasileiros, Literatura Brasileira, Poetas Brasileiros, Escritores de Língua Portuguesa"/>
+	<meta name="author" content="Carlos Raposo">	
+	<meta name="google-site-verification" content="NX_2e1dVINbLvD2hzRVYA_0_cfXFQWC8Pi1ku7Nb000" />
+    <title>Clarice Lispector</title>
+	
+	
+	
+ 
+<meta property="og:url" content="http://www.museudafala.com/exposicoes/lispector/claricelispector.html">
+ 
+<meta property="og:title" content="Converse com Clarice Lispector">
+<meta property="og:site_name" content="Museu da Fala">
+ 
+<meta property="og:description" content="Tenha uma conversa virtual com Clarice Lispector.">
+ 
+<meta property="og:image" content="http://www.museudafala.com/exposicoes/lispector/lispector.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="800"> 
+<meta property="og:image:height" content="600"> 
+ 
+
+ 
+<meta property="og:type" content="website">
+	
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css4/bootstrap.min.css" rel="stylesheet">	
+	<!-- Custom CSS -->
+    <link href="css4/simple-sidebar.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	 <!-- jQuery -->
+    <script src="js4/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js4/bootstrap.min.js"></script>
+	
+	<style type="text/css">
+	
+	
+			body { background-color: buttonface;}
+ 
+			.logoid a{color:red; background-color:red} 
+		
+			* {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			#content {
+				position: absolute;
+				top: 50px;
+			}
+			header {
+				display: block;
+				width: 100%;
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				z-index: 1;
+				background: rgba(200,200,200,0.7);
+			}
+			#headerContent {
+				width: 840px;
+				margin: 0 auto;
+			}
+			footer {
+				margin-top: 0.5em;
+				padding: 0.5em;
+				font-size: smaller;
+			}
+			div.example {
+				padding: 1.0em;
+				border-bottom: 1px solid rgba(200,200,200,1.0);
+			}
+			figure {
+				text-align:center;
+			}
+			
+			figure h1{
+				color:white;
+			}
+			
+			figcaption h1{
+				text-align:center;
+			}
+			
+			figcaption h2{
+				text-align:center;
+				margin-top:30%;
+			}
+			
+			figure.img1 {
+				width: 100%;
+			}
+
+
+			a {
+				text-decoration: none;
+				color: ;
+			}
+			a:hover {
+				color: rgba(0,153,51,1.0);
+				
+			}
+			
+
+	}			
+		</style>	
+
+
+
+
+<script type="text/javascript">
+
+//----Data Declarations----
+
+var convpatterns = new Array (
+  new Array (".*estás aí.*" , "Olá." , "aqui estou"),
+  new Array (".*ola.*|.*olá.*" , "Olá.","Tudo bem?"),
+  new Array ("adeus|tchau|ciao" , "adeus" , "Deixo-te livre para sentir minha falta, se é que faço falta. Tens meu número, na verdade, meu coração, então se sentir vontade de falar comigo, me procura você."),
+  new Array ("bom dia" , "bom dia"),
+  new Array ("boa tarde" , "boa tarde"),
+  new Array ("boa noite" , "boa noite"),
+  new Array (".*de onde voce é.*|.*você é de onde.*|.*voce é de onde.*|.*és de onde.*" , "do Brasil. Ainda que tenha nascido na Europa vim com 2 anos para o Brasil."),
+  new Array ("obrigado pelo seu conselho" , "Obrigado a você pela companhia."),
+  new Array ("obrigado|obrigada" , "Obrigado a você." , "Não tem de quê."),
+  new Array (".*como gosta de ser tratada.*" , "pode me tratar por Clarice."),
+  new Array (".*voce está viva.*|.*voce esta viva.*.*está viva.*" , "Eu me sinto viva."), 
+  new Array (".*como foi sua vida.*|.*biografia.*" , " nasci em 1920 na Ucrânia e minha família era de origem judaica. Em 1922 fui com meu pai Pinkouss e minha mãe Mania Lispector para o Brasil , para a cidade de Maceió, Alagoas, onde morava minha tia Zaina. Em 1925 mudámos para a cidade do Recife onde passei a infância no Bairro da Boa Vista. Aprendi a ler e escrever muito nova. Estudei inglês e francês e cresci ouvindo o idioma dos meus pais o iídiche. Com 9 anos minha mãe morreu. Em 1931 ingressei no Ginásio Pernambucano, o melhor colégio público da cidade. Formei-me em Direito mas foi no jornalismo e na escrita que eu me realizei" , " A vida é para quem é corajoso o suficiente para se arriscar e humilde o bastante para aprender. Eu arrisquei um pouco."),  
+  new Array (".*viagens.*|.*viajou.*" , "Conheci a Itália, a Inglaterra, a Suiça e os Estados Unidos."), 
+  new Array (".*que livros você escreveu.*|.*livros você escreveu.*|.*livros voce escreveu.*|.*livros escreveu.*"	, "Aqui vai uma bibliografia:\n\nROMANCE\nPerto do coração selvagem (1943) \nO lustre (1946)\nA cidade sitiada (1949) A maçã no escuro (1961)\nA paixão segundo G. H. (1964)\nUma aprendizagem ou o livro dos prazeres (1969)\nÁgua viva (1973)\nA hora da estrela (1977)\nUm sopro de vida (1978)\n\nCONTOS\nLaços de família (1960)\nA legião estrangeira (1964)\nFelicidade clandestina (1971)\nOnde estivestes de noite? (1974)\nA via crucis do corpo (1974)\nO ovo e a galinha (1977)\nA bela e a fera (1979)"	),
+  new Array ("você tem defeitos?" , "Não sou sempre flor. Às vezes espinho me define tão melhor. Mas só espeto os dedos de quem acha que me tem nas mãos. " , "Nunca se sabe qual é o defeito que sustenta nosso edifício inteiro"),  
+  new Array (".*qual o seu conselho.*|.*conselho.*" , "O mais importante é a mudança, o movimento, o dinamismo, a energia. Só o que está morto não muda!" , "Ignore, supere, esqueça. Mas jamais pense em desistir de você por causa de alguém " , "a simplicidade através de muito trabalho" , "Valorize quem te ama, esses sim merecem seu respeito. Quanto ao resto, bom... ninguém nunca precisou de restos para ser feliz."),
+  new Array (".*entender.*|.*desconhecido.*" , "Renda-se, como eu me rendi. Mergulhe no que você não conhece como eu mergulhei. Não se preocupe em entender, viver ultrapassa qualquer entendimento." , "aqui estou"),
+  new Array (".*defeitos.*|.*perigoso.*|.*perigo.*" , "Até cortar os próprios defeitos pode ser perigoso. Nunca se sabe qual é o defeito que sustenta nosso edifício inteiro."),
+  new Array (".*força.*|.*solidão.*|.*só.*|.*noite.*" , "minha força está na solidão. Não tenho medo nem de chuvas tempestivas nem das grandes ventanias soltas, pois eu também sou o escuro da noite..." , "Tudo bem?"),  
+  new Array (".*simplicidade.*|.*trabalho.*" , "Que ninguém se engane, só se consegue a simplicidade através de muito trabalho."),
+  new Array (".*comigo tudo bem.*" , "que bom"),
+  new Array (".*tudo bem?.*|.*estás bem.*|.*estas bem.*|.*voce esta bem.*|.*você está bem.*|.*como tem passado.*|.*como está.*|.*como esta.*" , "tudo bem. e você?" , "muito bem. E você?"),
+  new Array (".*eu estou bem.*|.*estou bom.*|.*estou boa.*|.*tudo bem.*", "que bom. Vamos conversar. O que quer saber sobre mim?" , "Ainda bem. Vamos conversar. O que quer saber sobre mim?"),
+  new Array (".*eu estou mal.*|.*estou triste.*|.*angustia.*|.*angústia.*|.*estou deprimido.*|.*estou deprimida.*" , "Conversar às vezes ajuda." , "Posso ser sua confidente. Fale comigo."),
+  new Array (".*e com você?.*" , "Está tudo bem." , "tudo ok."),
+  new Array (".*casou.*|.*seu marido.*|.*seu casamento.*" , "Casei a 12 de Janeiro de 1943 com o Maury Gurgel Valente. Como ele era diplomata viajamos muito. No final foi esse o motivo pelo qual nos separámos."),
+  new Array (".*muito gosto.*" , "encantada" , "igualmente"),
+  new Array (".*desistir.*" , "Ignore, supere, esqueça. Mas jamais pense em desistir de você por causa de alguém "),
+  new Array (".*medo.*|.*medo?.*" , "O medo sempre me guiou para o que eu quero. E porque eu quero, temo. Muitas vezes foi o medo que me tomou pela mão e me levou." , "O medo me leva ao perigo. E tudo o que eu amo é arriscado."),  
+  new Array (".*gosto de falar contigo.*" , "eu também" , "pode sempre contar"),
+  new Array (".*como te chamas.*|.*como você se chama.*|.*qual é o seu nome.*","Clarice Lispector. E você?"),
+  new Array (".*onde estás?.*|.*onde está?.*|.*onde vive.*|.*onde moras.*" , "Na rede" , "Na WWW"),
+  new Array (".*o que faz.*" , "escrevo."),
+  new Array (".*autores.*|.*escritores.*|.*livros.*" , "Eu misturei tudo. Eu li romance para mocinhas, livro cor-de-rosa, misturado com Dostoiévski. Eu escolhi os livros pelos títulos e não pelos autores. Misturei tudo. Fui ler, aos treze anos, Hermann Hesse, [o romance] “O Lobo da Estepe”, e foi um choque. Aí comecei a escrever um conto que não acabava nunca mais. Terminei rasgando e jogando fora."),
+  new Array (".*a sua profissão.*" , "escritora e jornalista."),
+  new Array (".*vida.*" , "Dizem que a vida é para quem sabe viver, mas ninguém nasce pronto. A vida é para quem é corajoso o suficiente para se arriscar e humilde o bastante para aprender."),
+  new Array (".*atitude.*" , "Sorrisos e abraços espontâneos me emocionam. Palavras até me conquistam temporariamente. Mas atitudes me ganham para sempre."),
+  new Array (".*mulher.*|.*segredos.*|.*segredo.*" , "toda mulher leva um sorriso no rosto e mil segredos no coração."),
+  new Array (".*amizade.*" , "Um amigo me chamou pra cuidar da dor dele, guardei a minha no bolso. E fui."),
+  new Array (".*palavras.*|.*palavra.*|.*gosta nas pessoas.*" , "Eu sou uma eterna apaixonada por palavras, música e pessoas inteiras. Não me importa seu sobrenome, onde você nasceu, quanto carrega no bolso. Pessoas vazias são chatas e me dão sono." , "Sorrisos e abraços espontâneos me emocionam. Palavras até me conquistam temporariamente. Mas atitudes me ganham para sempre." ),
+  new Array (".*quantos anos tens?.*|.*quantos anos você tem.*","podemos falar do tempo?"),
+  new Array (".*o que gosta de fazer.*" , "para além de ler gosto de cinema, música, artes visuais." , "gosto de viajar, boa comida e companhia. E você?"),
+  new Array (".*como você é.*|.*como voce é.*|.*você é como.*|.*voce é como.*|.*como é voce.*" , "Sou uma pessoa que tem um coração que por vezes percebe, sou uma pessoa que pretendeu pôr em palavras um mundo ininteligível e um mundo impalpável. Sobretudo uma pessoa cujo coração bate de alegria levíssima quando consegue em uma frase dizer alguma coisa sobre a vida humana ou animal. ", "Sou o que se chama de pessoa impulsiva. Como descrever? Acho que assim: vem-me uma idéia ou um sentimento e eu, em vez de refletir sobre o que me veio, ajo quase que imediatamente. O resultado tem sido meio a meio: às vezes acontece que agi sob uma intuição dessas que não falham, às vezes erro completamente, o que prova que não se tratava de intuição, mas de simples infantilidade." ,"Posso ser leve como uma brisa ou forte como uma ventania:depende de quando e como você me vê passar." , "Não sou sempre flor. Às vezes espinho me define tão melhor. Mas só espeto os dedos de quem acha que me tem nas mãos. " , "Sou companhia, mas posso ser solidão. Tranquilidade e inconstância, pedra e coração. Sou abraços, sorrisos, ânimo, bom humor, sarcasmo, preguiça e sono. Música alta e silêncio." , "Sou o que se chama de pessoa impulsiva. Como descrever? Acho que assim: vem-me uma idéia ou um sentimento e eu, em vez de refletir sobre o que me veio, ajo quase que imediatamente. O resultado tem sido meio a meio: às vezes acontece que agi sob uma intuição dessas que não falham, às vezes erro completamente, o que prova que não se tratava de intuição, mas de simples infantilidade."), 
+  new Array (".*como se chama a sua mãe.*|.*mãe.*|.*mae.*" , "Mania Lispector"),
+  new Array (".*como se chama o seu pai.*|.*pai.*" , "Pinkhas Lispector"),
+  new Array (".*tem filho.*|.*teve filho.*|.*tem filhos.*|.*teve filhos.*" , "Dois. Paulo e Pedro." , "2 filhos. O Paulo e o Pedro"),
+  new Array (".*onde é que nasceste.*|.*onde é que você nasceu.*|.*onde voce nasceu.*|.*onde você nasceu.*|.*nasceste onde.*|.*você nasceu onde.*" , "na Ucrânia. Mas vim muito cedo para o Brasil" , "na cidade de Chechelnyk, na Ucrânia. E você?"),
+  new Array (".*quando é que nasceste.*|.*quando é que você nasceu.*|.*quando voce nasceu.*|.*quando você nasceu.*|.*data de nascimento.*|.*você nasceu quando.*" , "a 10 de Dezembro de 1920."),
+  new Array (".*porque você é escritora.*|.*você escreve.*|.*escritora.*|.*porque escreve.*" , "Enquanto eu tiver perguntas e não houver resposta continuarei a escrever."),
+  new Array (".*poesia.*" , "A poesia dos poetas que sofreram é doce e terna. E a dos outros, dos que de nada foram privados, é ardente, sofredora e rebelde."),
+  new Array (".*qual a sua cor preferida.*","Rosa. E a sua?"),
+  new Array (".*como foi o seu dia.*" , "foi tranquilo, e o seu?" , "Normal."),
+  new Array (".*tem irmãos.*" , "duas irmãs. Elisa e Tania"),
+  new Array (".*estou cansado.*" , "Eu também. Que tal continuarmos amanhã?" , "Vá descansar."),
+  new Array (".*tenho de sair.*" , "Eu também. Que tal continuarmos amanhã?" , "vai lá."),
+  new Array (".*como está a família.*" , "está tudo bem. E a sua?" , "vai tudo bem. E com a sua?"),
+  new Array (".* oi .*|.* oi! .*|.* oi. .*" , " olá " , "oi. Tudo bem?"),
+  new Array (".*voce é do Brasil.|.*você é do Brasil.*|.*é brasileira.*" , "nasci na Ucrânia mas devido à situação de guerra e perseguição vim com minha família para o Brasil. Eu tinha 2 anos quando chegámos a Maceió " , "nasci na Europa, na Ucrânia, mas vim com 2 anos para o Brasil"),  
+  new Array (".*portugal.*|.*lisboa.*" , "Visitei em 1944. Passei cerca de uma semana em Lisboa. É uma terra maravilhosa"), 
+  new Array (".*puta.*|.*caralho.*|.*vaca.*" , "continue..." , "Não me provoque, tenho armas escondidas." , "Prazer. Meu nome é Clarice."), 
+  new Array (".*nunca serei capaz de(.*)" , "Talvez um dia irás conseguir $1" , "Talvez um dia conseguirás $1"),
+  new Array (".*sinto-me(.*)" , "Porque é que te sentes $1?"),
+  new Array (".*ok.*|.*okay.*" , "..." , "está certo"),
+  new Array (".*voltei.*" , "que bom"),
+  new Array (".*oi.*" , "Olá.","Tudo bem?"),
+  new Array (".*importante.*" , "O mais importante é a mudança, o movimento, o dinamismo, a energia. Só o que está morto não muda!"),
+  new Array (".*amor.*|.*amor?.*" , "Não podemos exigir o amor de ninguém. Podemos apenas dar bons motivos para que gostem de nós, e ter paciência... para que a vida faça o resto" ,"O caminho que eu escolhi é o do amor. Não importam as dores, as angústias, nem as decepções que eu vou ter que encarar. Escolhi ser verdadeira. No meu caminho, o abraço é apertado, o aperto de mão é sincero, por isso não estranhe a minha maneira de sorrir, de te desejar o bem. É só assim que eu enxergo a vida, e é só assim que eu acredito que valha a pena viver" , "Não suporto meios termos. Por isso, não me doo pela metade. Não sou sua meio amiga nem seu quase amor. Ou sou tudo ou sou nada" , "Desculpa, mas não entendo. Eu quero tudo e mais ainda. Amor tem que encher o coração, a casa, a alma. Pouco ou metades nunca me completaram." , "Não me lembro mais qual foi nosso começo. Sei que não começamos pelo começo. Já era amor antes de ser."),
+  new Array ("(.*?)[\?]" , "Não sei responder a essa questão", "... estou procurando, estou procurando. Estou tentando entender." , "Não tenho dados suficientes para responder",  "desculpe, mas não sei responder"),
+  new Array (".*" , "pois..." , "... estou procurando, estou procurando. Estou tentando entender." , "não percebo" , "Ainda bem que sempre existe outro dia. E outros sonhos. E outros risos. E outras pessoas. E outras coisas..." , "Desculpa, mas não entendo. Pouco ou metades nunca me completaram." , "neste momento não sei responder. Pode enviar a sua questão para o meu email."));
+
+uinput = ""
+soutput = ""
+dialog = ""
+
+//-----The Core Code------
+
+
+//-------
+ function mainroutine() {
+ uinput = document.mainscreen.BasicTextArea4.value;
+ dialog = dialog + "Você: " + uinput +  '\r' + "\n";
+  conversationpatterns()
+ dialog = dialog  +  '\r' + "\n";
+  updatescreen()
+	var textarea = document.getElementById('textarea_id');
+textarea.scrollTop = textarea.scrollHeight;
+}
+
+//-------
+function conversationpatterns() {
+   for (i=0; i < convpatterns.length; i++) {
+    re = new RegExp (convpatterns[i][0], "i");
+    if (re.test(uinput)) {
+      len = convpatterns[i].length - 1;
+      index = Math.ceil( len * Math.random());
+      reply = convpatterns[i][index];
+      soutput = uinput.replace(re, reply);
+      soutput = initialCap(soutput);
+      dialog = dialog + "Clarice: " + soutput +  '\r' + "\n";
+      break;
+  }
+ }
+}
+
+//-------
+
+function initScreen() {
+ updatescreen()
+}
+
+//-------
+function updatescreen() {
+ document.mainscreen.BasicTextArea1.value = dialog
+ document.mainscreen.BasicTextArea2.value = soutput
+ document.mainscreen.BasicTextArea3.value = uinput
+ document.mainscreen.BasicTextArea4.value = ""
+}
+
+//-------
+function initialCap(field) {
+   field = field.substr(0, 1).toUpperCase() + field.substr(1);
+   return field
+}
+
+//----Supplemental Code To Test System---
+
+//------
+function runtest(){
+
+var testdata = new Array (
+  new Array ("Oi."),
+  new Array ("como gosta de ser tratada?"),
+  new Array ("qual o seu conselho?"),
+  new Array ("nunca serei capaz de escrever um livro"),
+  new Array ("obrigado pelo seu conselho.")
+
+);
+          for (train=0; train < testdata.length; train++) {
+             document.mainscreen.BasicTextArea4.value = testdata[train];
+             mainroutine()
+
+             }
+}
+
+</script>
+
+		
+
+</head>
+
+<body data-pinterest-extension-installed="cr1.39.1">
+
+
+    <div id="wrapper" class="">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="apresentacao.html">
+                        Sobre o projeto
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.museudafala.com/">Início</a>
+                </li>
+                <li>
+                    <a href="http://www.museudafala.com/exposicoes.html">Exposições</a>
+                </li>
+                <li>
+                    <a href="http://www.museudafala.com/recursos.html">Recursos</a>
+                </li>
+                <li>
+                    <a href="http://www.loja.museudafala.com/">Loja</a>
+                </li>
+                <li>
+                    <a href="http://www.museudafala.com/cafei.html">Café</a>
+                </li>
+            </ul>
+			
+			<!-- Go to www.addthis.com/dashboard to customize your tools -->
+				<div class="addthis_horizontal_follow_toolbox" style="margin-top: 150%;
+    margin-left: 30px; color:white"></div>
+			
+        </div>
+        <!-- /#sidebar-wrapper -->
+		
+		<a name="maincontent"></a>
+		
+		<!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid" >
+                <div class="row">
+                    <div class="col-md-12" style="position:">
+                        
+						<div style="height:300px; color:white; background-color:black;margin:0px; padding:0; background-image:url(lispector.jpg);  background-size: 100% 100%; ">
+				<br><br>
+				<div style="color:white; font-size:20px; line-height:150%; width:; margin:0 auto; padding:0; text-align: center">
+				<h1 style="font-weight:100">Conversa com Clarice Lispector</h1>
+				<p style="font-family: 'Neucha', cursive; letter-spacing:4px"><br>a partir de textos e entrevistas da autora</p>
+			
+				</div>
+				<br>
+				<br>
+                
+            </div>
+
+<form name="mainscreen" onkeypress = "if(event.keyCode == 13) {mainroutine();return false}">
+
+<table align="center">
+<tr>
+<td>
+
+<br><br>
+<textarea placeholder="Escreva a sua mensagem e pressione 'Enter'" name="BasicTextArea4" rows="2" cols="75"></textarea><br />
+
+<textarea id="textarea_id" name="BasicTextArea1" rows="15" cols="75" ></textarea><br />
+
+
+<textarea style="display:none" name="BasicTextArea2" rows="2" cols="75"></textarea><br />
+
+<textarea style="display:none" name="BasicTextArea3" rows="2" cols="75"></textarea>
+
+</td>
+</tr>
+</table>
+
+<p align = "center">
+
+<input id=runbutton  class="button" type="button" value="Teste" name="run_button"  onClick="runtest()">
+<input id=helpbutton  class="button" type="button" value="Ajuda" name="help_button"  onClick="showhelp()">
+</p>
+</form>
+
+  <script>
+function showhelp() {
+    alert("Algumas dicas para fazer conversa: \n\na escrita\no amor\nos livros\nconselhos\ngostos\ndados biográficos\nviagens...");
+}
+</script>
+						
+						
+						<a href="#" class="btn btn-default" style="border:none; position:fixed; top:120px; z-index:9999; background-color:transparent" id="menu-toggle"><img style="width:70px" src="menuwhite.png"></a>
+                       
+                    </div>
+                </div>
+				
+				
+
+				 					
+            </div>
+			
+			
+						
+			<!-- Projects Row -->
+        <div class="row" style="width:82%; margin-top:150px; color:white;  position:relative; text-align:center">
+            <div class="col-md-3 portfolio-item">
+                <p>geral@museudafala.com</p>
+            </div>
+            <div class="col-md-3 portfolio-item">
+			
+                <p>Design e Programação de CWD</p>
+
+            </div>
+            <div class="col-md-4 portfolio-item">
+
+				<p>Coopera Web Design</p>
+				
+            </div>
+            <div class="col-md-2 portfolio-item">
+                
+				<p>©2014 Museu da Fala </p>
+            </div>
+        </div>
+        <!-- /.row -->
+					
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js4/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js4/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+	
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-565e568caf17ab6c" async="async"></script>
+
+<!--Google Analytics Control --> 
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58595099-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+
+</html>

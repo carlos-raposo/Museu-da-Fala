@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)http://ironsummitmedia.github.io/startbootstrap-simple-sidebar/# -->
+<html lang="pt">
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Página para 'A meio do caminho' de Carlos Drummond de Andrade. Explore o poema em várias línguas">
+    <meta name="Keywords" content="Carlos Drummond de Andrade, Drummond de Andrade, Poesia Brasileira, Poetas Brasileiros, Escritores de Língua Portuguesa"/>
+	<meta name="author" content="Carlos Raposo">	
+	<meta name="google-site-verification" content="NX_2e1dVINbLvD2hzRVYA_0_cfXFQWC8Pi1ku7Nb000" />
+
+    <title>No meio do caminho</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css4/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Custom CSS -->
+    <link href="css4/simple-sidebar.css" rel="stylesheet">
+	<link href="css4/captionss2.css" rel="stylesheet">
+	
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+	
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	 <!-- jQuery -->
+    <script src="js4/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js4/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+</script>
+	
+	
+	<script>
+
+// Mouseover/ Click sound effect- by JavaScript Kit (www.javascriptkit.com)
+// Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+
+//** Usage: Instantiate script by calling: var uniquevar=createsoundbite("soundfile1", "fallbackfile2", "fallebacksound3", etc)
+//** Call: uniquevar.playclip() to play sound
+
+var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+	"mp3": "audio/mpeg",
+	"mp4": "audio/mp4",
+	"ogg": "audio/ogg",
+	"wav": "audio/wav"
+}
+
+function createsoundbite(sound){
+	var html5audio=document.createElement('audio')
+	if (html5audio.canPlayType){ //check support for HTML5 audio
+		for (var i=0; i<arguments.length; i++){
+			var sourceel=document.createElement('source')
+			sourceel.setAttribute('src', arguments[i])
+			if (arguments[i].match(/\.(\w+)$/i))
+				sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+			html5audio.appendChild(sourceel)
+		}
+		html5audio.load()
+		html5audio.playclip=function(){
+			html5audio.pause()
+			html5audio.currentTime=0
+			html5audio.play()
+		}
+		return html5audio
+	}
+	else{
+		return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+	}
+}
+
+//Initialize two sound clips with 1 fallback file each:
+
+var pedrapt=createsoundbite("sons/pedrapt.wav", "sons/pedrapt.mp3")
+var pedraen=createsoundbite("sons/pedraen.wav", "sons/pedraen.mp3")
+var pedradn=createsoundbite("sons/pedradn.wav", "sons/pedradn.mp3")
+var pedrafr=createsoundbite("sons/pedrafr.wav", "sons/pedrafr.mp3")
+var pedrahe=createsoundbite("sons/pedrahe.wav", "sons/pedrahe.mp3")
+var pedrait=createsoundbite("sons/pedrait.wav", "sons/pedrait.mp3")
+var pedrahl=createsoundbite("sons/pedrahl.wav", "sons/pedrahl.mp3")
+var pedrahg=createsoundbite("sons/pedrahg.wav", "sons/pedrahg.mp3")
+var pedradt=createsoundbite("sons/pedradt.wav", "sons/pedradt.mp3")
+var pedralt=createsoundbite("sons/pedralt.wav", "sons/pedralt.mp3")
+var pedraes=createsoundbite("sons/pedraes.wav", "sons/pedraes.mp3")
+var pedratp=createsoundbite("sons/pedratp.wav", "sons/pedratp.mp3")
+
+</script>
+	
+	<style type="text/css">
+	
+	.portfolio-item {
+    margin-bottom: ;
+	}
+
+	footer {
+    margin: 50px 0;
+	}
+	
+	body {background-color:black; font-family:roboto; font-weight:300}
+	
+	#page-content-wrapper {
+    padding: 0px;}
+	
+	<!-- for access skip to main-->	
+	
+	.skipnav { text-align: left; }
+	.skipnav a { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+	.skipnav a:focus, .skipnav a:active { position: static; left: 0; width: auto; height: auto; overflow: visible; text-decoration: underline; }
+	<!-- end for access skip to main-->	
+   
+ 
+		.logoid a{color:red; background-color:red} 
+		
+			* {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			#content {
+				position: absolute;
+				top: 50px;
+			}
+			header {
+				display: block;
+				width: 100%;
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				z-index: 1;
+				background: rgba(200,200,200,0.7);
+			}
+			#headerContent {
+				width: 840px;
+				margin: 0 auto;
+			}
+			footer {
+				margin-top: 0.5em;
+				padding: 0.5em;
+				font-size: smaller;
+			}
+			div.example {
+				padding: 1.0em;
+				border-bottom: 1px solid rgba(200,200,200,1.0);
+			}
+			figure {
+				text-align:center;
+			}
+			
+			figure h1{
+				color:white;
+			}
+			
+			figcaption h1{
+				text-align:center;
+			}
+			
+			figcaption h2{
+				text-align:center;
+				margin-top:30%;
+			}
+			
+			figure.img1 {
+				width: 100%;
+			}
+
+
+			a {
+				text-decoration: none;
+				color: ;
+			}
+			a:hover {
+				color: rgba(0,153,51,1.0);
+				
+			}
+			
+			figcaption {text-align:justify; background-color:transparent; font-size:2.7vh}
+			
+	.square {
+	width: ;
+	height: 0;
+	padding-bottom: 100%;
+	}			
+		</style>				
+
+</head>
+
+<body data-pinterest-extension-installed="cr1.39.1">
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content" style="background-color:black; color:white">
+            
+            <div class="modal-body" style="color:white; font-size:150%;">
+			<button type="button" class="close" style="color:white; opacity:1; font-size:300%" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 style="color:white; font-size:120%; line-height:150%">No meio do caminho, Carlos Drummond de Andrade, Revista Antropofagia Nr. 3, 1928</h4>
+				<p><br>
+				Tendo sido escrito entre 1924-25 foi uma verdadeira pedra de escândalo modernista.
+				A utilização do verbo "ter"" era criticada pelos puristas que preferiam o verbo existir. 
+				Drummond prefere o comum ao formal. A repitação ostensiva e a linguagem comum questionam a poesia tradicional. A poesia pode estar no banal,
+				no acontecimento mais corriqueiro, mas a sua repurcussão na alma é simbólica.  Este é já um dos poemas mais universais do poeta.
+				</p>
+				
+				<br>
+				<h4 style="text-align:center">INSTRUÇÕES</h4>
+				<p style="text-align:center">Passe com o rato por cima da imagem para ver o texto</p>
+                <p style="text-align:center">Clique uma vez na imagem para iniciar o som</p>
+				<p style="text-align:center">Clique duas vezes para parar o som</p>
+				<br>
+				<h4 style="text-align:center">DESAFIOS</h4>
+				<p style="text-align:center">Misture, mezcle, confunda</p>
+				<p style="text-align:center">Acompanhe com bossa-nova ou música eletrónica</p>
+				<br style="text-align:center"><br>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+	<div class="skipnav"><a href="#maincontent">Skip to main content</a></div>
+
+    <div id="wrapper" class="">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="apresentacao.html">
+                        Sobre o projeto
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.museudafala.com/">Início</a>
+                </li>
+                <li>
+                    <a href="http://www.museudafala.com/exposicoes.html">Exposições</a>
+                </li>
+                <li>
+                    <a href="http://www.museudafala.com/recursos.html">Recursos</a>
+                </li>
+                <li>
+                    <a href="http://www.loja.museudafala.com/">Loja</a>
+                </li>
+                <li>
+                    <a href="http://www.museudafala.com/cafei.html">Café</a>
+                </li>
+                <li style="color:white"><br><br><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;  Seguir:
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+				<div class="addthis_horizontal_follow_toolbox" style="margin-left:30px"></div>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+		
+		<a name="maincontent"></a>
+		
+		<!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid" >
+                <div class="row">
+                    <div class="col-md-12" style="position:">
+                        <h1 style="text-align:center; font-size:4.5vh; letter-spacing:10px;color:white; padding-top:40px">
+						No meio do caminho havia uma pedra</h1>
+                        <br><br>
+						<a href="#" class="btn btn-default" style="border:none; position:fixed; top:120px; z-index:9999; background-color:transparent" id="menu-toggle"><img style="width:70px" src="menu.png"></a>
+                       
+                    </div>
+                </div>
+				
+				 <!-- Projects Row -->
+			<div class="row" style="width:100%; margin:0 auto; margin-top:0px;">
+			
+				<div class="col-md-3 portfolio-item" style="background-color:; font-size:1.7em">
+				
+				<a onmousedown="pedrapt.playclip()" ondblclick="pedrapt.pause()">
+					<figure class="img1 overlay dark reveal-smooth square" style="background-color:olive;">
+						<img src="imagens3/pedra.png" class="img-responsive"  alt="havia uma pedra" title="No meio do caminho" >
+							<figcaption style="background-color: olive; ; font-size:3wh;">
+								<h1>No meio do caminho</h1>
+								<p>No meio do caminho tinha uma pedra
+								tinha uma pedra no meio do caminho
+								tinha uma pedra
+								no meio do caminho tinha uma pedra.
+								Nunca me esquecerei desse acontecimento
+								na vida de minhas retinas tão fatigadas.
+								Nunca me esquecerei que no meio do caminho
+								tinha uma pedra
+								tinha uma pedra no meio do caminho
+								no meio do caminho tinha uma pedra. [PT]</p>
+							</figcaption>
+					</figure>
+                </a>
+				
+				</div>
+
+                        <div class="col-md-3 portfolio-item" style="font-size:1.7em">
+                <a onmousedown="pedraen.playclip()" ondblclick="pedraen.pause()">
+				<figure class="img1 overlay dark reveal-smooth square" style="background-color:brown">
+						<img src="imagens3/pedra.png" class="img-responsive" alt="a stone" title="In the middle of the road" >
+					<figcaption style="background-color: brown">
+						 <h1>In the middle of the road</h1>
+						 <p>In the middle of the road was a stone
+						was a stone in the middle of the road was stone
+						in the middle of the road was a stone.
+						I shall never forget that event
+						in the life of my so tired eyes.
+						I shall never forget that in the middle of the road
+						was a stone
+						was a stone in the middle of the road
+						in the middle of the road was a stone. [EN]</p>
+					</figcaption>
+					</figure>
+                </a>
+            </div>
+			
+
+            <div class="col-md-3 portfolio-item" style="font-size:1.8em"> 
+                <a onmousedown="pedradn.playclip()" ondblclick="pedradn.pause()">
+				<figure class="img1 overlay dark reveal-smooth">
+                    <figure class="img1 overlay dark reveal-smooth square" style="background-color:green">
+						<img src="imagens3/pedra.png" class="img-responsive"  alt="var en sten" title="I midten af vejen"  >
+					<figcaption style="background-color: green">
+						<h1>I midten af vejen</h1>
+						<p>I midten af vejen var en sten var en sten i midten af vejen var en sten i midten af vejen var en sten. Jeg vil aldrig glemme denne begivenhed i livet af mine nethinder så træt. Jeg vil aldrig glemme, at i midten af vejen var en sten var en sten i midten af vejen i midten af vejen var en sten. [DA]</p>
+					</figcaption>
+					</figure>
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item" style="font-size:1.7em">
+                <a onmousedown="pedrafr.playclip()" ondblclick="pedrafr.pause()">
+				<figure class="img1 overlay dark reveal-smooth square" style="background-color:blue">
+						<img src="imagens3/pedra.png" class="img-responsive" alt="avait une pierre" title="Au milieu du chemin"  >
+					<figcaption style="background-color: blue">
+						<h1>Au milieu du chemin</h1>
+						<p>Au milieu du chemin y avait une pierre
+						y avait une pierre au milieu du chemin
+						y avait une pierre
+						au milieu du chemin y avait une pierre.
+						Jamais je n’oublierai cet évènement
+						dans la vie de mes rétines si fatiguées.
+						Jamais je noublierai qu’au milieu du chemin
+						y avait une pierre
+						y avait une pierre au milieu du chemin
+						au milieu du chemin y avait une pierre. [FR]</p>
+					</figcaption>
+					</figure>
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+				 <!-- Projects Row -->
+        <div class="row" style="width:100%; margin:0 auto;">
+            <div class="col-md-3 portfolio-item" style="background-color:#999933; font-size:1.7em">
+                <a onmousedown="pedrahe.playclip()" ondblclick="pedrahe.pause()">
+				<figure class="img1 overlay dark reveal-smooth square" style="background-color:cyan">
+						<img src="imagens3/pedra.png" class="img-responsive" alt="uma pedra" title="Drummond de Andrade" >
+					<figcaption style="background-color: cyan">
+						<h1>באמצע הכביש הייתה אבן</h1>
+						<p>באמצע הכביש היה אבן הייתה אבן באמצע הכביש הייתה אבן באמצע הכביש הייתה אבן. אני לעולם לא אשכח את האירוע הזה בחיים של רשתית כל כך העייף שלי. אני לעולם לא אשכח שבאמצע הכביש היה אבן הייתה אבן באמצע הכביש באמצע הכביש הייתה אבן. [HE]</p>
+					</figcaption>
+					</figure>
+                </a>
+            </div>
+
+
+			
+            <div class="col-md-3 portfolio-item" style="background-color:#999933; font-size:1.7em">
+                <a onmousedown="pedrait.playclip()" ondblclick="pedrait.pause()">
+				<figure class="img1 overlay dark reveal-smooth square" style="background-color:indigo">
+						<img src="imagens3/pedra.png" class="img-responsive" alt="c’era un sasso" title="Nel mezzo del cammino" >
+					<figcaption style="background-color: indigo">
+						 <h1>Nel mezzo del cammino</h1>
+						 <p>Nel mezzo del cammino c’era un sasso
+						c’era un sasso nel mezzo del cammino
+						c’era un sasso
+						nel mezzo del cammino c’era un sasso.
+						Non dimenticherò questa cosa accaduta
+						nella vita dei miei occhi così stanchi.
+						Non dimenticherò mai che nel mezzo del cammino
+						c’era un sasso
+						c’era un sasso nel mezzo del cammino
+						nel mezzo del cammino c’era un sasso. [IT]</p>
+					</figcaption>
+					</figure>
+                </a>
+            </div>
+			
+            <div class="col-md-3 portfolio-item" style="background-color:#999933; font-size:1.7em">
+                <a onmousedown="pedrahl.playclip()" ondblclick="pedrahl.pause()">
+				<figure class="img1 overlay dark reveal-smooth square" style="background-color:gray">
+						<img src="imagens3/pedra.png" class="img-responsive" alt="was een steen" title="In het midden van de weg"  >
+					<figcaption style="background-color: gray">
+						 <h1>In het midden van de weg</h1>
+						 <p>In het midden van de weg was een steen een steen 
+						 in het midden van de weg was een steen in het midden 
+						 van de weg was een steen. Ik zal nooit deze gebeurtenis 
+						 in het leven van mijn netvliezen zo moe vergeten. Ik zal 
+						 nooit vergeten dat in het midden van de weg was een steen 
+						 een steen in het midden van de weg in het midden van de 
+						 weg was een steen. [NL]</p>
+					</figcaption>
+					</figure>
+                </a>
+            </div>
+			
+             <div class="col-md-3 portfolio-item" style="background-color:#999933; font-size:1.7em">
+                <a onmousedown="pedrahg.playclip()" ondblclick="pedrahg.pause()">
+				<figure class="img1 overlay dark reveal-smooth square" style="background-color:pink">
+                   <img src="imagens3/pedra.png" class="img-responsive" alt="tinha uma pedra" title="Az út közepén volt" >
+					<figcaption style="background-color: pink">
+						<h1>Az út közepén volt</h1>
+						<p>Az út közepén volt egy kő kő volt a az út közepén volt egy kő a 
+						közepén, az út pedig egy kő. Soha nem fogom elfelejteni ezt az eseményt 
+						az élet az én retinák olyan fáradt. Soha nem fogom elfelejteni, hogy az 
+						út közepén volt egy kő kő volt a közepén, az út közepén, az út pedig egy kő. [HU]</p>
+					</figcaption>
+					</figure>
+                </a>
+            </div>
+			
+        </div>
+        <!-- /.row -->		
+
+				 <!-- Projects Row -->
+        <div class="row" style="width:100%; margin:0 auto;">
+             <div class="col-md-3 portfolio-item" style="background-color:#999933; font-size:1.7em">
+                <a onmousedown="pedradt.playclip()" ondblclick="pedradt.pause()">
+				<figure class="img1 overlay dark reveal-smooth square" style="background-color:red">
+                   <img src="imagens3/pedra.png" class="img-responsive" alt="lag ein Stein" title="Mitten im Weg">
+					<figcaption style="background-color:red">
+						<h1>Mitten im Weg lag ein Stein</h1>
+						<p>Mitten im Weg lag ein Stein
+						Lag ein Stein mitten im Weg
+						Lag ein Stein
+						Mitten im Weg lag ein Stein.
+						Nie werde ich dieses Ereignis
+						Im Leben meiner so ermudeten Netzhaut vergessen.
+						Nie werde ich vergessen dass mitten im Weg
+						Lag ein Stein
+						Lag ein Stein mitten im Weg
+						Mitten im Weg lag ein Stein. [DE]</p>
+					</figcaption>
+					</figure>
+                </a>
+            </div>
+			
+            <div class="col-md-3 portfolio-item" style="background-color:#999933; font-size:1.7em">
+                <a onmousedown="pedralt.playclip()" ondblclick="pedralt.pause()">
+				<figure class="img1 overlay dark reveal-smooth square" style="background-color:chartreuse">
+						<img src="imagens3/pedra.png" class="img-responsive" >
+					<figcaption style="background-color:chartreuse">
+						  <h1>In media via</h1>
+						  <p>In media via lapis lapidem lapidem in media 
+						  visus adesse via in media visus adesse via lapis. 
+						  Si oblitus fuero usque ad animam meam in hac re tam retinas 
+						  er expedit distinct. Si oblitus fuero usque in media visus 
+						  adesse via lapis lapis in media visus adesse via in media 
+						  visus adesse via lapis. [LA]</p>
+					</figcaption>
+					</figure>
+                </a>
+            </div>
+			
+            <div class="col-md-3 portfolio-item" style="background-color:#999933; font-size:1.7em">
+                <a onmousedown="pedraes.playclip()" ondblclick="pedraes.pause()">
+				<figure class="img1 overlay dark reveal-smooth square" style="background-color:turquoise ">
+						 <img src="imagens3/pedra.png" class="img-responsive" >
+					<figcaption style="background-color:turquoise ">
+						<h1>En medio del camino</h1>
+						<p>En medio del camino había una piedra,
+						había una piedra en medio del camino,
+						había una piedra,
+						en medio del camino había una piedra.
+						Nunca me olvidaré de ese acontecimiento
+						en la vida de mis retinas tan fatigadas.
+						Nunca me olvidaré que en medio del camino
+						había una piedra,
+						había una piedra en medio del camino
+						en medio del camino había una piedra. [ES]</p>
+					</figcaption>
+					</figure>
+                </a>
+            </div>
+			
+            <div class="col-md-3 portfolio-item" style="background-color:#999933; font-size:1.7em">
+                <a onmousedown="pedratp.playclip()" ondblclick="pedratp.pause()">
+				<figure class="img1 overlay dark reveal-smooth square" style="background-color:olive ">
+					<img src="imagens3/pedra.png" class="img-responsive">
+					<figcaption style="background-color:olive ">
+						<h1>Pytéripé pé i tyb'amé</h1>
+						<p>Pytéripé pé i tyb'amé oîepé itá
+						I tyb'amé oîepé itá pytéripé pé
+						I tyb'amé oîepé itá
+						Pytéripé pé i tyb'amé oîepé itá.
+						Aan xe sessaraine cuapabuera sui
+						ecobépe xe essápupé caneõgatu.
+						Aan xe sessaraine pytéripé pé
+						I tyb'amé oîepé itá
+						I tyb'amé oîepé itá pytéripé pé
+						Pytéripé pé i tyb'amé oîepé itá. [GN]</p>											
+					</figcaption>
+					</figure>
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->					
+            </div>
+			
+			<hr>
+						
+			<!-- Projects Row -->
+        <div class="row" style="width:82%; margin:0 auto; color:white">
+            <div class="col-md-3 portfolio-item">
+                <p style="font-weight:bold">Contactos</p>
+				<p>Geral: museudafala@gmail.com</p>
+				<p>Professores: servicoeducativo@museudafala.com</p>
+				<p>Imprensa: press@museudafala.com</p>
+            </div>
+            <div class="col-md-3 portfolio-item">
+			<br>
+			<br>
+                <p>Design e Programação de CWD</p>
+				<a href="http://www.museudafala.com/mapadosite.html">Mapa do site</a>
+
+            </div>
+            <div class="col-md-4 portfolio-item">
+				<br>
+                <p style="font-weight:bold">Apoios</p>
+				<p>Coopera Web Design</p>
+				<p>Estamparte</p>
+				
+            </div>
+            <div class="col-md-2 portfolio-item">
+                <p><br></p>
+				<p><a href="http://www.museudafala.com/acessibilidade.html">Acessibilidade</a></p>
+				<p><a href="http://www.museudafala.com/termoslegais.html">Termos legais</a></p>
+				<p>©2014 Museu da Fala </p>
+            </div>
+        </div>
+        <!-- /.row -->
+					
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js4/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js4/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+	
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-565e568caf17ab6c" async="async"></script>
+
+<!--Google Analytics Control --> 
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58595099-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+
+</html>
