@@ -1,0 +1,756 @@
+/* ==========================================================================
+ Reset
+ ========================================================================== */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, b, i, hgroup, menu, nav, section, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+article, aside, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+ins, mark {
+  background-color: #ff9;
+  text-decoration: none;
+}
+
+button {
+  overflow: visible;
+  font-size: 1em;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+
+/* ==========================================================================
+ Tools
+ ========================================================================== */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clear {
+  clear: both;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.relative {
+  position: relative;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Hide visually, but keep available for screenreaders: by Jon Neal.
+www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden  &  h5bp.com/v*/
+.rm {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  z-index: -1;
+}
+
+del,
+.strike {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+button {
+  overflow: visible;
+  font-size: 1em;
+  padding: 0;
+}
+
+.hide {
+  display: none;
+}
+
+strong, .strong, b, th, dt, label {
+  font-weight: bold;
+}
+
+i, em, .italic, blockquote, cite, q {
+  font-style: italic;
+}
+
+.norm {
+  font-weight: normal;
+}
+
+blockquote em, blockquote cite, blockquote i {
+  font-variant: normal;
+}
+
+.ie img {
+  -ms-interpolation-mode: bicubic;
+}
+
+legend {
+  position: absolute;
+  z-index: -1;
+  font-size: 0;
+  height: 0;
+  color: transparent;
+}
+
+/* Media object. See https://github.com/stubbornella/oocss/tree/master/core/media
+ ========================================================================== */
+
+.media {
+  display: block;
+  margin-bottom: 0.66666666666667em; /* 16/24px */
+  overflow: hidden;
+}
+
+.media-pull-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.media-pull-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.media-body {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+ Typography
+ 16px / 32px / 64px line heights
+ ========================================================================== */
+
+body {
+  font-size: 1.5em; /* 24px */
+  line-height: 1.3333333em;  /* 24px/32px default */
+  color: #555;
+  background: #ffffff;
+  font-family: "adobe-caslon-pro-1", "adobe-caslon-pro-2", Georgia, Times, "Times New Roman", serif;
+  text-rendering: optimizeLegibility;
+}
+
+@media all and (max-width: 620px) {
+  body {
+    font-size: 1.25em;
+  }
+}
+
+textarea, .sans {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: #000;
+}
+
+.swing, .masthead {
+  font-family: "swingdancer-1","swingdancer-2", Baskerville, Georgia, cursive;
+}
+
+p, ul, ol, dl, table {
+  margin-bottom: 1.33333333em;
+  line-height: 1.33333333em;
+}
+
+ul ul, ol ol, ol ul, ul ol, dl dl, dl ul, dl ol, ul dl, ol dl {
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+ Base styles
+ ========================================================================== */
+
+a {
+  color: #222;
+}
+
+a:visited {
+  font-weight: normal;
+}
+
+.strong a:visited,
+a.strong:visited {
+  font-weight: bold;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #000;
+  text-decoration: underline;
+}
+
+h1 a,
+h2 a,
+h3 a {
+  text-decoration: none;
+}
+
+h2.swing {
+  font-size: 64px;
+  line-height: 72px;
+  margin: 0 10px;
+  padding: 17px 0 17px;
+  color: #333;
+}
+
+/* ==========================================================================
+ Structure
+ ========================================================================== */
+
+.container {
+  width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media all and (max-width: 840px) {
+  .container {
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+/* ==========================================================================
+ Header
+ ========================================================================== */
+
+.masthead {
+  position: relative;
+  background: #000;
+  color: #fff;
+  border-bottom: 2px solid #333;;
+  text-shadow: 0 1px 0 #aaa;
+  padding: 0 10px;
+}
+
+.home .masthead {
+  font-size: 5.333333333em; /* 128px / 24px */
+  text-align: center;
+  border-bottom-width: 2px;
+  padding: 0.375em 30px 0.625em; /* 48/128,  80/128px */
+}
+
+@media all and (max-width: 620px) {
+  .home .masthead {
+      font-size: 4em;
+  }
+}
+
+.site-title {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 0 6px;
+  line-height: 1.3333333em;
+}
+
+.site-title--index {
+  margin: 32px 0 48px;
+  line-height: 1em;
+  padding: 0;
+}
+
+a.site-title:hover,
+a.site-title:focus,
+a.site-title:active {
+  color: #ccc;
+}
+
+.masthead-twitter {
+  position: absolute;
+  right: 20px;
+  top: 8px;
+}
+
+.masthead-twitter:hover,
+.masthead-twitter:focus {
+  opacity: 0.8;
+}
+
+@media all and (max-width: 620px) {
+  .masthead-twitter {
+    right: 10px;
+  }
+
+  .masthead-twitter img {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+.main-content-title {
+  color: #333;
+  font-size: 2.6666666667em; /* 64px/24px */
+  line-height: 1.25; /* 80/64px */
+  margin: 1.375em auto 0.84375em; /* 88/64px,  88/54px */
+  text-align: center;
+  -webkit-font-feature-settings: "calt", "liga";
+  -moz-font-feature-settings: "liga=1";
+  -ms-font-feature-settings: "liga";
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  font-weight: bold;
+  padding: 0 40px;
+}
+
+@media all and (max-width: 620px) {
+  .main-content-title {
+    font-size: 2em;
+    padding: 0;
+  }
+}
+
+/* ==========================================================================
+ Index
+ ========================================================================== */
+
+.site-tagline {
+  font-size: 0.25em; /* 128/32px */
+  line-height: 1.5em; /* 48/32px */
+  margin: 16px auto 0;
+  width: 780px;
+  text-align: left;
+  color: #aaa;
+  text-shadow: none;
+}
+
+.site-tagline a {
+  color: #ddd;
+}
+
+.site-tagline p:last-child {
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+ Listings
+ ========================================================================== */
+
+.listing {
+  width: 780px;
+  margin: 0 auto;
+}
+
+.listing-item {
+  margin-bottom: 16px;
+  color: #333;
+  position: relative;
+}
+
+.listing-date {
+  color: #555;
+  background: #f1ebe2;
+  position: relative;
+  z-index: 1;
+  padding-left: 10px;
+}
+
+.listing-title {
+  background: #f1ebe2;
+  position: relative;
+  z-index: 1;
+}
+
+.listing-dots {
+  opacity: 0.5;
+  position: absolute;
+  height: 5px;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  background-position: -1px 100%;
+  background-repeat: repeat-x;
+  background-size: 9px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAMCAIAAADgcHrrAAAAYklEQVQoz2P4+PoRGYiBCtpeXzm2e/XS9auXHj93nVhtN7fXGyOBkmXHiNF2rMQYDcSdfUpQ29ODSRjajhOh7VgGOdqAfluN4reAKduIDcmnV3Zv3bgaGJi7D52hfbzRXBsAte4RXN0X8kMAAAAASUVORK5CYII=);
+}
+
+@media all and (max-width: 840px) {
+  .listing {
+    width: auto;
+    margin: auto 30px;
+  }
+
+  .site-tagline {
+  width: auto;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .listing {
+    margin: auto 20px;
+  }
+
+  .listing-link {
+    padding: 0 !important;
+  }
+
+  .listing-date {
+    float: none;
+    padding: 0;
+    margin-left: 0.5em;
+  }
+
+  .listing-dots {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+ Footer
+ ========================================================================== */
+
+.site-footer {
+  padding: 0 30px 1.66666667em; /* 32/24px */
+  clear: both;
+  margin: 2em 0 0;
+}
+
+.site-footer p {
+  margin-bottom: 5px;
+}
+
+.site-footer-content-wrapper {
+  margin: 0 auto;
+  max-width: 780px;
+  text-align: center;
+}
+
+/* ==========================================================================
+ Articles
+ ========================================================================== */
+
+.article {
+  width: 780px;
+  margin: 0 auto;
+  position: relative;
+  color: #555;
+}
+
+.article-meta {
+  text-align: center;
+  margin-bottom: 2em; /* 48/24px */
+  line-height: 1.333333333em;
+}
+
+.article h2,
+.article h3 {
+  margin: 1.5em 0 0.5em; /* 48/32px,  16/32px */
+  font-size: 1.333333333em; /* 32/24 */
+  font-weight: bold;
+  line-height: 1.5em; /* 48/32 */
+}
+
+.article blockquote {
+  margin: 1em 60px;
+}
+
+.article-content ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.article-footer {
+  padding: 1.333333333em 1.333333333em 1em;
+  margin: 0;
+  border: 1px solid #ccc;
+  line-height: 1.333333333em;
+  border-radius: 3px;
+  background: rgba(255,255,255,0.5);
+}
+
+.article-discussion {
+  margin: 0 0 1.5em;
+  padding: 0 0 1em;
+  border-bottom: 1px solid #ccc;
+}
+
+.article-footer-nav {
+  text-align: center;
+}
+
+.paul-avatar {
+  border-radius: 50px;
+}
+
+.video-wrapper {
+  height: 0;
+  padding-bottom: 66.666666666667%; /* 408/612 */
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+iframe.vimeo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 10px solid #333;
+}
+
+@media all and (max-width: 840px) {
+
+  .article {
+      width: auto;
+  }
+
+  .article-header,
+  .article-content {
+      margin: auto 30px;
+  }
+
+  .article img,
+  .article iframe {
+      max-width: 100%;
+  }
+
+  .article pre {
+      margin-left: -30px;
+      margin-right: -30px;
+  }
+
+  .article-footer {
+      margin: 0 30px;
+  }
+}
+
+@media all and (max-width: 540px) {
+
+  .article-header,
+  .article-content {
+      margin: auto 20px;
+  }
+
+  .article pre {
+      margin-left: -20px;
+      margin-right: -20px;
+  }
+
+  .article-footer {
+      margin: 0 20px;
+  }
+}
+
+.article .latest-posts {
+  margin-bottom: 2.6666666667em; /* 64/24 */
+}
+
+/* ==========================================================================
+ Code samples
+ ========================================================================== */
+
+code {
+  line-height: 18px;
+}
+
+pre, code {
+  font-family: Consolas,'Courier New',Courier,monospace;
+  overflow: auto;
+}
+
+pre {
+  margin-bottom: 2.28571428571429em; /* 32/14px */
+  padding: 1.14285714285714em 20px; /* 16px/14px */
+  position: relative;
+  background: #fff;
+  background: rgba(255,255,255,0.7);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14285714285714em; /* 16px/14px */
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+/* Intermediate width layouts */
+@media all and (max-width: 959px) {
+  pre {
+      width: auto;
+      margin-left: 0;
+      font-size: 14px;
+  }
+}
+
+pre.thin {
+  margin-left: 0;
+  width: 596px;
+}
+
+/* Pretty printing styles. Used with prettify.js.
+ ========================================================================== */
+
+.str { color: #197434; }
+.kwd { color: #895c4a; }
+.com { color: #8f530f; }
+.typ { color: #f7b37b; }
+.lit { color: #8f2c32; }
+.pun { color: #333; }
+.pln { color: #c56436; }
+pre .tag, code .tag { color: #c56436; }
+.atn { color: #c56436; }
+.atv { color: #197434; }
+.dec { color: #6f6; }
+
+@media print {
+.str { color: #060; }
+.kwd { color: #006; font-weight: bold; }
+.com { color: #600; font-style: italic; }
+.typ { color: #404; font-weight: bold; }
+.lit { color: #044; }
+.pun { color: #440; }
+.pln { color: #000; }
+pre .tag, code .tag { color: #006; font-weight: bold; }
+.atn { color: #404; }
+.atv { color: #060; }
+}
+
+/* ==========================================================================
+ Experiments
+ ========================================================================== */
+
+.experiment-body {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+  padding: 48px 0;
+  position: relative;
+}
+
+.experiment-header {
+  background: #fff;
+  padding: 1px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.experiment-title {
+  width: 780px;
+  font-size: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.learn {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 0;
+  padding: 24px 0 18px;
+  border-top: 1px solid #ccc;
+}
+
+@media all and (max-width: 840px) {
+  .experiment-title {
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .learn {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/* Experiment Tests
+ ========================================================================== */
+
+.js .fallback {
+  display: none;
+}
+
+.fallback {
+  margin: 0 auto 3em;
+  width: 600px;
+  background: #333;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  text-align: center;
+  border-radius: 7px;
+  padding: 1.3em 1em 0.5em;
+  text-shadow: #000 0 1px 0;
+}
+
+.fallback a,
+.fallback a:visited,
+.fallback a:active,
+.fallback a:focus {
+  color: #fff;
+}
+
+
+/* Failed tests */
+.no-csstransforms3d .test-3dtransforms,
+.no-getusermedia .test-getusermedia {
+  display: none;
+}
+
+/* Fallbacks */
+.no-csstransforms3d .test-3dtransforms-fallback,
+.no-getusermedia .test-getusermedia-fallback {
+display: block;
+}
